@@ -1,3 +1,5 @@
+05/30/2022 EDIT: For some reason this review got overwritten with my github.io webpage. I had a copy of the review saved locally and just re-pasted it.
+
 Book goes into decent detail visually with code examples regarding some of the primitive language functionalities such as types, loops, conditionals, functions, et cetera. However like all things read, some skepticism is healthy.
 
 Section 7.2.4 which goes into function inlining incorrectly states that if the body of a function is "short" (whatever that means, a metric or quantification was not defined for what is determined to be "short") then the body of the function will be inherently inlined. While this is somewhat true, it's also not.
@@ -16,7 +18,7 @@ The arrays section is pretty good, it goes into how indexing works, construction
 
 Chapter 9 which goes into references, pointers, and memory management. It gives an example in which a reference cannot bind to an rvalue, however it doesn't really explain that there's another type of reference called an rvalue reference which can. However going into rvalue refs can also lead into xvalues and prvalues, which may be out of scope for beginners.
 
-The end of the references section of chapter 9 goes into when to use pass by reference vs pass by value, and states that if you ever need to change something, you should use pass by ref. While this is sometimes the case, sometimes it's also not. Primitive values can be passed by value and changed through a return statement, and some compilers (C++11 and higher) may perform extra work to create a reference, however if you're using a compiler running C++03, just use pass by ref.
+The end of the references section of chapter 9 goes into when to use pass by reference vs pass by value, and states that if you ever need to change something, you should use pass by ref. While this is sometimes the case, sometimes it's also not. Primitive values can be passed by value and changed through a return statement, and some compilers (C++11 and later) may perform extra work to create a reference, however if you're using a compiler running C++03, just use pass by ref.
 
 The section on pointers could do a bit more effort at explaining what pointers are and what they're used for. The introductory paragraph states "A pointer variable is a variable whose contents are of pointer type." A beginner is going to read that and most likely ask "Okay but I'm still confused about what a pointer is." It's like that whole "In order to understand recursion, you must first understand recursion" joke.
 
